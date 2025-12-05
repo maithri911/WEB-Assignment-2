@@ -1,0 +1,117 @@
+:root {
+  --primary: #5565ff;
+  --primary-light: #8dbbff;
+  --bg: #f0f4ff;
+  --text-muted: #6d7385;
+  --danger: #d9534f;
+  --success: #28a745;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.headerBox {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.7rem;
+  color: var(--primary);
+}
+
+.sub {
+  color: var(--text-muted);
+}
+
+.reg-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+}
+
+.inputField label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.inputField input,
+.inputField select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d9ddf5;
+  font-size: 0.95rem;
+}
+
+.inputField small {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.btnPrimary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btnOutline {
+  background: transparent;
+  border: 1px solid #bcc4ff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.resultBox {
+  margin-top: 20px;
+  min-height: 70px;
+}
+
+.alertSuccess {
+  background: #eafff0;
+  border-left: 4px solid var(--success);
+  padding: 12px 15px;
+  border-radius: 6px;
+}
+
+.alertError {
+  background: #ffeaea;
+  border-left: 4px solid var(--danger);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

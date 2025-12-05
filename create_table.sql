@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS web_assignments_db
+  DEFAULT CHARACTER SET utf8mb4
+  DEFAULT COLLATE utf8mb4_unicode_ci;
+
+USE web_assignments_db;
+
+CREATE TABLE IF NOT EXISTS registrations (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(150) NOT NULL,
+    email VARCHAR(200) NOT NULL,
+    phone VARCHAR(30) NOT NULL,
+    gender VARCHAR(20) DEFAULT NULL,
+    course VARCHAR(100) DEFAULT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB;

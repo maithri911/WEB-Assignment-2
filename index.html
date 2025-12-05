@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 2 – Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <header class="headerBox">
+    <h1 class="title">Online Registration</h1>
+    <p class="sub">Enter your details below to save your registration.</p>
+  </header>
+
+  <form id="regForm" class="reg-card">
+    <div class="grid">
+
+      <div class="inputField">
+        <label>Full Name</label>
+        <input type="text" name="name" maxlength="150" required>
+        <small>Example: John Doe</small>
+      </div>
+
+      <div class="inputField">
+        <label>Email Address</label>
+        <input type="email" name="email" maxlength="200" required>
+        <small>We do not share your email</small>
+      </div>
+
+      <div class="inputField">
+        <label>Phone Number</label>
+        <input type="tel" name="phone" maxlength="30" required>
+        <small>Mobile / Landline</small>
+      </div>
+
+      <div class="inputField">
+        <label>Gender</label>
+        <select name="gender">
+          <option value="">Choose</option>
+          <option>Female</option>
+          <option>Male</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="inputField">
+        <label>Course</label>
+        <input type="text" name="course" maxlength="100">
+        <small>Example: CSE / ECE</small>
+      </div>
+
+    </div>
+
+    <div class="actions">
+      <button type="submit" id="submitBtn" class="btnPrimary">Submit</button>
+      <button type="reset" class="btnOutline">Clear</button>
+    </div>
+  </form>
+
+  <div id="resultBox" class="resultBox"></div>
+
+  <footer class="footer">
+    <small>Assignment 2 • HTML | CSS | jQuery | PHP | MySQL</small>
+  </footer>
+</div>
+
+</body>
+</html>
